@@ -9,3 +9,8 @@ ${namepace} indicates chart namespace value
 + **helm rollback ${namespace}** **${revision}** command to rollback/revert to mentioned revision
 + **helm uninstall ${namespace} --dry-run** command to execute deletion of namespace in dry run manner w/o actually deleting it
 + **helm upgrade --install ${namespace} .** command which install the namespace if it's not present if already present uprades the namespace
+
+Usage of flow control statements like:
++ **range** to loop over a value eg: list of namespaces
++ **with** avoid repeating .Values. again and again
++ **$varibale** local variable whose value can be used
